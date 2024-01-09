@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>IFrame Example</title>
+    <title>Responsive Page Example</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
-        }
-        ._1il6y7w {
             width: 100%;
-            height: 100%;
-            border: none;
+            display: flex; /* Enables flex context for centering */
+            justify-content: center; /* Centers content horizontally */
+            align-items: center; /* Centers content vertically */
+            overflow: hidden; /* Prevents scrollbars from appearing */
+            background-color: black; /* Sets the background color to black */
+        }
+        #if1 {
+            display: flex; /* Enables flex context for centering */
+            justify-content: center; /* Centers content horizontally */
+            align-items: center; /* Centers content vertically */
+            height: 100%; /* Sets the height to the full height of its parent */
+            width: 100%; /* Sets the width to the full width of its parent */
+        }
+        iframe {
+            padding-left: 9%;
+            padding-top: 40%;
+            height: 100%; /* Sets the height to 80% of its parent */
+            width: 100%; /* Sets the width to 80% of its parent */
         }
     </style>
 </head>
 <body>
-    <iframe src="https://appetize.io/embed/af5yxyj38991wyb09c5p7n1790?autoplay=false&amp;debug=true&amp;device=pixel4&amp;deviceColor=black&amp;embed=true&amp;launchUrl=exp%3A%2F%2Fexp.host%2F%40snack%2Fsdk.49.0.0-_L50qK73UH&amp;orientation=portrait&amp;scale=72&amp;screenOnly=true&amp;xDocMsg=true&amp;xdocMsg=true&amp;params=%7B%22EXDevMenuDisableAutoLaunch%22%3Atrue%2C%22EXKernelLaunchUrlDefaultsKey%22%3A%22exp%3A%2F%2Fexp.host%2F%40snack%2Fsdk.49.0.0-_L50qK73UH%22%2C%22EXKernelDisableNuxDefaultsKey%22%3Atrue%7D" class="_1il6y7w"></iframe>
+    <div id="if1">
+        <iframe src="https://appetize.io/embed/af5yxyj38991wyb09c5p7n1790?autoplay=false&amp;debug=true&amp;device=pixel4&amp;deviceColor=black&amp;embed=true&amp;launchUrl=exp%3A%2F%2Fexp.host%2F%40snack%2Fsdk.49.0.0-_L50qK73UH&amp;orientation=portrait&amp;scale=72&amp;screenOnly=true&amp;xDocMsg=true&amp;xdocMsg=true&amp;params=%7B%22EXDevMenuDisableAutoLaunch%22%3Atrue%2C%22EXKernelLaunchUrlDefaultsKey%22%3A%22exp%3A%2F%2Fexp.host%2F%40snack%2Fsdk.49.0.0-_L50qK73UH%22%2C%22EXKernelDisableNuxDefaultsKey%22%3Atrue%7D"></iframe>
+    </div>
 </body>
 </html>
